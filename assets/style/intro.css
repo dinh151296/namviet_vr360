@@ -1,0 +1,40 @@
+/* page intro style */
+
+
+.wrap__content-page h3.title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 26px 0px 0px;
+}
+
+.body__content-text p {
+    font-size: 16px;
+}
+
+.body__content-text p span {
+    font-size: 30px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.body__content-text {
+    margin-bottom: 45px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .body__content-text p span {
+        font-size: 26px;
+    }
+    .body__content-text p {
+        text-align: justify;
+    }
+    .aside-form  {
+        margin-bottom: 30px;
+    }
+    
+}
