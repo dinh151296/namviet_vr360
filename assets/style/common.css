@@ -1,4 +1,10 @@
 /* common style */
+
+/* font Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* font Inter */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +13,9 @@
 
 body {
     line-height: 1.4;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #333333;
 }
 
 @media only screen and (max-width: 767px) {
@@ -24,6 +33,7 @@ a {
 
 a:hover {
     text-decoration: none;
+    opacity: 0.7;
 }
 
 ul,
@@ -45,7 +55,109 @@ h1, h2, h3, h4, h5, h6, p {
 
 .container {
     /* custum */
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+:root {
+    --cl-highlight:#FFBD13;
+}
+
+section.section-block {
+    padding: 80px 0px;
+}
+
+.btn-ct {
+    font-size: 16px;
+    color: #FD7F19;
+    border: 1px solid #FD7F19;
+    padding: 13px;
+    min-width: 190px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.btn-ct:hover {
+    background-color: #FD7F19;
+    color: #fff;
+}
+
+h2.title-section {
+    font-size: 34px;
+    color:#017801;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2.title-section  span {
+    color: #FD7F19;
+}
+
+/* news list */
+.new__item {
+    margin-bottom: 45px;
+}
+
+.new__item .thumb img {
+    height: 242px;
+    object-fit: cover;
+}
+
+.new__item .new__time {
+    margin: 14px 0px 8px;
+    flex-wrap: nowrap;
+}
+
+.new__item .new__time img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.new__item .new__time span {
+    font-size: 16px;
+    color: #777777;
+}
+
+.new__item a.title {
+    font-size: 18px;
+    font-weight: 600;
+    display: -webkit-box !important;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.new__item a.title:hover {
+    color: #017801;
+}
+/* news list */
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+    section.section-block {
+        padding: 45px 0px;
+    }
+    .wrap-info__text h2 {
+        text-align: center;
+        font-size: 26px;
+    }
+    h2.title-section {
+        font-size: 26px;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 479px) {
+    .new__item .thumb img {
+        height: 200px;
+    }
+}
