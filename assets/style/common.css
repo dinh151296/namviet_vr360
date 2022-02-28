@@ -1,0 +1,51 @@
+/* common style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        min-width: 320px;
+        overflow-x: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    transition: 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    transition: .2s;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+
+.container {
+    /* custum */
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
