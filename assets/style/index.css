@@ -286,6 +286,84 @@ section.distribution-units {
     max-width: 127px;
 }
 
+.info-product__icon {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 1;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.modal-info .modal-dialog {
+    max-width: 1170px;
+    max-height: 730px;
+    overflow: hidden;
+}
+
+.modal-info__header {
+    border-bottom: 0;
+    padding: 14px 20px;
+}
+
+.modal-info__body {
+    padding: 0px 20px 0px;
+    overflow: hidden;
+}
+
+.modal-info__body img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.modal-info__header .close {
+    opacity: 1;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 20px;
+}
+
+.info-modal__text {
+    padding: 24px 50px;
+    overflow: hidden;
+}
+
+.info-modal__text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.info-modal__text p {
+    font-size: 16px;
+    max-height: 146px;
+    padding-right: 10px;
+    overflow-y: auto;
+}
+
+.modal {
+    padding-right: 0px !important;
+}
+
+.info-modal__text p::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #e7e7e7;
+}
+
+.info-modal__text p::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #dddddd;
+}
+
+.info-modal__text p  span {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 4px;
+}
 
 @media only screen and (max-width: 1024px) {
     .container__news {
@@ -344,6 +422,25 @@ section.distribution-units {
     }
     ul.menu__left li {
         padding-right: 10px;
+    }
+    .modal-info__header {
+        padding: 8px 16px;
+    }
+    .modal-info__header .close {
+        padding-right: 16px;
+    }
+    .modal-info__body {
+        padding: 0px 1rem;
+    }
+    .modal-info__body img {
+        height: 220px;
+    }
+    .info-modal__text {
+        padding: 20px;
+    }
+    .info-modal__text p span {
+        font-size: 24px;
+        line-height: 1.1;
     }
 }
 
